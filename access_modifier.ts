@@ -9,10 +9,10 @@ public readonly id:number;
 public name:string;
 protected _balance :number;
 
-  constructor(id:number,name:string,balance:number){
+  constructor(id:number,name:string,_balance:number){
     this.id=id;
     this.name=name;
-    this._balance =balance;
+    this._balance =_balance;
   }
   addDeposit(amount :number){
 
@@ -25,7 +25,7 @@ protected _balance :number;
 }
 class StudentAccount extends BankAccount{
   test(){
-    
+
   }
 }
 const herAccount = new BankAccount(111, 'Mrs.Jui',40);
